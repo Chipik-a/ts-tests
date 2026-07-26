@@ -9,6 +9,7 @@ test('Successful login', async ({ page }) => {
     await loginPage.goto();
     await loginPage.signIn(process.env.ALICE_EMAIL!, process.env.ALICE_PASSWORD!);
 
+
     await expect(mainPage.feedTitle).toBeVisible();
 
 });
